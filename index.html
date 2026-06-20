@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weatherly - Weather at a Glance</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> 
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="nav">
+            <div class="logo">
+                <i data-lucide="cloud-sun"></i>
+                <p>Weatherly</p>
+            </div>
+            <button class="theme-toggle"><i data-lucide="moon"></i> </button>
+        </div>
+        <div class="search-bar">
+            <i data-lucide="search"></i>  
+            <input type="text" class="city-input" placeholder="Search for city...">
+            <button class="search-btn"><i data-lucide="search"></i></button>
+        </div>
+    </header>
+    <div class="weather-card">
+        <div class="weather-image">
+            <img class="weather-icon" src="https://openweathermap.org/img/wn/02d@4x.png">
+        </div>
+        <div class="weather-info">
+            <div class="location">
+                <i data-lucide="map-pin"></i>
+                <span class="city-name">New Delhi, India</span>
+            </div>
+            <div class="date current-date">
+                Wednesday, 17 June | 10:43 AM
+            </div>
+            <div class="temp current-temp">
+                 32°
+                 <span>C</span>
+            </div>
+            <div class="condition  weather-condition">
+            Partly Cloudy
+            </div>
+            <div class="high-low max-min-temp">
+            H:34° &nbsp;&nbsp; L:26°
+            </div>
+        </div>
+        <div class="divider"></div>
+        <div class="weather-details">
+            <div class="detail">               
+               <div class="detail-left">
+               <i data-lucide="droplets"></i>
+               <span>Humidity</span>
+               </div>
+           <span class="detail-value humidity">70%</span>
+           </div>
+           <div class="detail">
+                <div class="detail-left">
+                <i data-lucide="wind"></i>
+                <span>Wind Speed</span>
+                </div>
+            <span class="detail-value wind-speed">10 km/h</span>
+           </div>
+           <div class="detail">
+                <div class="detail-left">
+                <i data-lucide="thermometer"></i>
+                <span>Feels Like</span>
+                </div>
+            <span class="detail-value feels-like">36°</span>
+           </div>
+           <div class="detail">
+                <div class="detail-left">
+                <i data-lucide="eye"></i>
+                <span>Visibility</span>
+                </div>
+            <span class="detail-value visibility">8 km</span>
+           </div>
+           <div class="detail">
+                <div class="detail-left">
+                <i data-lucide="gauge"></i>
+                <span>Pressure</span>
+                </div>
+            <span class="detail-value pressure">1012 hPa</span>
+           </div>
+        </div>
+    </div>
+    <div class="hourly-forecast">
+    <div class="forecast-header">
+        <h2>HOURLY FORECAST</h2>
+        <i data-lucide="chevron-right"></i>
+    </div>
+    <div class="forecast-cards hourly-container">        
+    </div>
+    </div>
+    <div class="five-day-forecast">
+    <h2>5-DAY FORECAST</h2>
+    <div class="days-container five-day-container">
+    </div>
+    </div>
+    <footer>
+    ❤️ Stay safe and have a great day!
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/lucide@latest/dist/umd/lucide.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
